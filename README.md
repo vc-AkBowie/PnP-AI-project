@@ -19,4 +19,4 @@ A lightweight, ready-to-use web tool for making Picture-in-Picture elements
 
 ### Live Demo
 You can give it a try online directly:  
-👉 **[Click here to view the Demo](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/)**
+👉 **[Click here to use my App now](https://vc-akbowie.github.io/PnP-AI-project/)**
