@@ -48,7 +48,28 @@
     .canvas-area { flex: 1; display: flex; flex-direction: column; position: relative; background: #e9ecef; overflow-y: auto; }
     
     /* 頂部控制列 */
-    .toolbar { height: 60px; background: #fff; border-bottom: 1px solid #ddd; display: flex; justify-content: center; align-items: center; gap: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); z-index: 5; }
+    .toolbar { 
+      height: 60px; 
+      background: #fff; 
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 15px; 
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+      z-index: 5; 
+      position: relative; /* 確保偽元素定位正確 */
+    }
+
+    /* 頂部控制列底部的漸層亮色邊框 (Gradient Line) */
+    .toolbar::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px; /* 邊框厚度 */
+      background: linear-gradient(90deg, #b026ff, #007bff, #00f2fe, #38ef7d); /* 紫 -> 藍 -> 青 -> 綠 漸層 */
+    }
     .mode-btn { padding: 8px 16px; border-radius: 20px; border: 2px solid #ccc; background: #fff; cursor: pointer; font-weight: bold; color: #555; transition: all 0.2s; }
     .mode-btn.is-editing { border-color: #ff3b30; background: #fff0f0; color: #ff3b30; }
     .mode-btn.is-viewing { border-color: #007bff; background: #f0f7ff; color: #007bff; }
