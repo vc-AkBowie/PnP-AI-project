@@ -1,6 +1,5 @@
 # Web-based Picture-in-Picture Editing Tool
-A lightweight, ready-to-use web tool for making Picture-in-Picture elements
-============================================================================================================================================
+> A lightweight, ready-to-use web tool for making Picture-in-Picture elements
 ## 🌟 Features
 - ⚡ **Plug and Play**: Pure front-end build with zero dependencies or backend services required. Just open `index.html` and start using it.
 - 💾 **Export to HTML**: Download your completed work as a standalone `.html` file for easy offline playing or sharing.
