@@ -6,6 +6,28 @@
 - 🔒 **Privacy-Focused**: All image processing runs locally in your browser. No data is ever uploaded to third-party servers.
 - 🎨 **Clean UI**: Simple and intuitive workflow for seamless image importing and previewing.
 ---
+
+## 💻 System Compatibility
+>[!NOTE]
+> **No GPU & No Extra Software Required**: All processing is lightweight and runs entirely inside your browser. No dedicated graphics card or additional software installation is needed..
+
+### Supported Platforms
+| Platform | Support Status |
+| :--- | :---: |
+| 💻 **Desktop** (macOS, Windows, Linux) | ✅ Supported |
+| 📱 **Mobile & Tablet** (iOS, iPadOS, Android) | ❌ Not Supported |
+
+### Supported Browsers
+| Browser | Support Status | 
+| :--- | :---: |
+| 🟢 **Chrome** | ✅ Supported | 
+| 🔵 **Edge** | ✅ Supported |
+| 🦁 **Brave** | ✅ Supported | 
+| 🔴 **Safari** | ⚠️ Suboptimal Performance | 
+
+---
+
+
 ## 📸 Preview
 
 *(Place a screenshot or GIF demo of your tool here)*
