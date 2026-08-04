@@ -1,3 +1,5 @@
+<img src="icon/icon.png" width="80" align="right" alt="Logo" style="margin-left: 15px;"><br>
+
 # Web-based Picture-in-Picture Editing Tool
 > A lightweight, ready-to-use web tool for making Picture-in-Picture elements
 ## 🌟 Features
@@ -40,4 +42,4 @@
 
 ### Live Demo
 You can give it a try online directly:  
-👉 **[Click here to use my App now](https://vc-akbowie.github.io/PnP-AI-project/)**
+👉 **[Click here to use my App now](https://vc-akbowie.github.io/PiP-AI-project/)**
