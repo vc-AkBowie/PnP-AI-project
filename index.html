@@ -203,6 +203,7 @@ let viewStates = {
 
 let isDragging = false;
 let lastMouseX, lastMouseY;
+let isEventsBound = false; //防同時多個相同的function在run，免zoom ratio疊加
 
 function init() {
   renderLayersControl();
@@ -402,6 +403,10 @@ function renderPreview() {
 }
 
 function setupCanvasEvents() {
+//若已經run過一次，直接break，防止重複綁定
+  if (isEventsBound) return;
+  isEventsBound = true; //首次run後，立即退場
+
   const canvas = document.getElementById('canvasContainer');
   
   canvas.addEventListener('wheel', (e) => {
@@ -422,7 +427,7 @@ function setupCanvasEvents() {
 
     if (interactionMode === 'edit' && nextLayerIndex !== -1) {
       const nextLayer = layers[nextLayerIndex];
-      const factor = e.deltaY < 0 ? 1.05 : 0.95; 
+      const factor = e.deltaY < 0 ? 1.10 : 0.90; 
       
       // 計算新的 scale 並加入限制防呆 (0.00001 ~ 100)
       const newScale = Math.min(Math.max(nextLayer.scale * factor, 0.00001), 100);
@@ -443,7 +448,7 @@ function setupCanvasEvents() {
       state.focusY = mouseY - ((e.clientY - rect.top) / rect.height) * newSize + newSize / 2;
       renderPreview();
     }
-  });
+  },{passive:false});
 
   canvas.addEventListener('mousedown', (e) => {
     isDragging = true;
